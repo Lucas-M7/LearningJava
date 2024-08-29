@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Digite o primeiro número: ");
         double numberOne = scanner.nextDouble();
 
-        System.out.println("Digite o segunto número: ");
+        System.out.println("Digite o segundo número: ");
         double numberTwo = scanner.nextDouble();
 
         double sum = numberOne + numberTwo;
