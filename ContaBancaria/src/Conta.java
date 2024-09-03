@@ -1,8 +1,8 @@
 public class Conta {
     int numero;
-    String dono;
     double saldo;
     double limite;
+    Cliente titular = new Cliente();
 
     boolean sacar(double quantidade) {
        if (saldo < quantidade)
@@ -14,5 +14,16 @@ public class Conta {
 
     void depositar(double quantidade) {
         this.saldo += quantidade;
+    }
+
+    boolean transferePara(Conta destino, double valor) {
+        boolean retirou = this.sacar(valor);
+
+        if (!retirou) {
+            return false;
+        } else {
+            destino.depositar(valor);
+            return true;
+        }
     }
 }
