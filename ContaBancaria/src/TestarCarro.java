@@ -6,6 +6,8 @@ public class TestarCarro {
         meuCarro.modelo = "Golf GTR";
         meuCarro.velocidadeAtual = 0;
         meuCarro.velocidadeMaxima = 210;
+        meuCarro.motor.tipo = "O melhor";
+        meuCarro.motor.potencia = 770;
 
         meuCarro.ligar();
 
