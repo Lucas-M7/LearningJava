@@ -4,7 +4,7 @@ public class Funcionario {
     public int idade;
     public String departamento;
     public double salario;
-    public String entradaNoBanco;
+    Data dataDeEntrada = new Data();
     public  String rg;
     public boolean estaNaEmpresa;
     public boolean estaDeFerias;
@@ -16,11 +16,11 @@ public class Funcionario {
         System.out.println("Departamento: " + this.departamento);
         System.out.println("Está na empresa? " + this.estaNaEmpresa);
         System.out.println("Está de férias? " + this.estaDeFerias);
-        System.out.println("Data de entrada ao banco: " + this.entradaNoBanco);
+        System.out.println("Data de entrada ao banco: " + this.dataDeEntrada.formatarData());
     }
 
     public void consultarSalario() {
-        System.out.println("O seu salário atual é de: " + this.salario);
+        System.out.println("\nO seu salário atual é de: " + this.salario);
     }
 
     public void receberAumento(double aumento) {
